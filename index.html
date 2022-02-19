@@ -23,12 +23,31 @@
         </ul>
       </nav>
       <article>
-        <form action="/action_page.php" method="post">
+        <form >
+            <fieldset id="nevek">
+                <legend>Nevek</legend>
           <label for="knev">Keresztnév:</label>
-          <input type="text" id="knev" name="knev" /><br /><br />
+          <input type="text" id="knev" name="knev" placeholder="keresztnev" />
           <label for="vnev">Vezetéknév</label>
-          <input type="text" id="vnev" name="vnev" /><br /><br />
-          <input type="submit" value="OK" />
+          <input type="text" id="vnev" name="vnev" value="vezeteknev" />
+          
+        </fieldset>
+          <fieldset>
+
+          
+          <input type="radio"
+           id="ferfi"
+            name="nem"
+             value="ferfi">
+            <label for="férfi">Férfi</label> 
+            <input type="radio"
+           id="nő"
+            name="nem"
+             value="nő">
+            <label for="nő">Nő</label> 
+        </fieldset>
+            <input type="submit" value="OK" />
+
         </form>
       </article>
       <footer>Szekeres Zoltán</footer>
